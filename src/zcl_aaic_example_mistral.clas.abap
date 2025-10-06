@@ -22,6 +22,8 @@ CLASS zcl_aaic_example_mistral IMPLEMENTATION.
 
     DATA(lo_aaic_conn) = NEW ycl_aaic_conn( i_api = yif_aaic_const=>c_mistral ).
 
+    lo_aaic_conn->set_base_url( i_base_url = 'https://api.mistral.ai' ).
+
     lo_aaic_conn->set_api_key( i_api_key = l_api_key ).
 
     DATA(lo_aaic_openai) = NEW ycl_aaic_openai( i_model = 'mistral-large-latest'
