@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_AAIC_EXAMPLE_MISTRAL</CLSNAME>
+    <CLSNAME>ZCL_AAIC_EXAMPLE_ISUITE_OPENAI</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>ABAP AI tools Cloud - Example Mistral</DESCRIPT>
+    <DESCRIPT>ABAP AI tools Cloud - Example OpenAI</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
