@@ -1,4 +1,4 @@
-CLASS zcl_aaic_example_fc_openai DEFINITION
+CLASS zcl_aaic_example_fc_anthropic DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -13,7 +13,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_example_fc_openai IMPLEMENTATION.
+CLASS zcl_aaic_example_fc_anthropic IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
@@ -21,14 +21,14 @@ CLASS zcl_aaic_example_fc_openai IMPLEMENTATION.
           l_message             TYPE string,
           l_system_instructions TYPE string.
 
-    DATA(lo_aaic_conn) = NEW ycl_aaic_conn( i_api = yif_aaic_const=>c_openai ).
+    DATA(lo_aaic_conn) = NEW ycl_aaic_conn( i_api = yif_aaic_const=>c_anthropic ).
 
-    lo_aaic_conn->set_base_url( i_base_url = 'https://api.openai.com' ).
+    lo_aaic_conn->set_base_url( i_base_url = 'https://api.anthropic.com' ).
 
     lo_aaic_conn->set_api_key( i_api_key = l_api_key ).
 
-    DATA(lo_aaic_openai) = NEW ycl_aaic_openai( i_model = 'gpt-5'
-                                                i_o_connection = lo_aaic_conn ).
+    DATA(lo_aaic_anthropic) = NEW ycl_aaic_anthropic( i_model = 'claude-sonnet-4-20250514'
+                                                      i_o_connection = lo_aaic_conn ).
 
     l_system_instructions = |# Identity\n|.
     l_system_instructions = |{ l_system_instructions }You are a friendly and helpful math support assistant.\n|.
@@ -39,9 +39,9 @@ CLASS zcl_aaic_example_fc_openai IMPLEMENTATION.
     l_system_instructions = |{ l_system_instructions }Never send multiple tool calls at once.\n|.
     l_system_instructions = |{ l_system_instructions }Always be patient, encouraging, and explain your steps in a clear and understandable way.\n|.
 
-    lo_aaic_openai->set_system_instructions( l_system_instructions ).
+    lo_aaic_anthropic->set_system_instructions( l_system_instructions ).
 
-    DATA(lo_function_calling) = NEW ycl_aaic_func_call_openai( ).
+    DATA(lo_function_calling) = NEW ycl_aaic_func_call_anthropic( ).
 
     lo_function_calling->add_methods( VALUE #( ( class_name = 'zcl_aaic_math_tools'
                                                  method_name = 'add'
@@ -59,11 +59,11 @@ CLASS zcl_aaic_example_fc_openai IMPLEMENTATION.
                                                  method_name = 'divide'
                                                  description = 'Use this method to divide two numbers (i_num1 / i_num2)' ) ) ).
 
-    lo_aaic_openai->bind_tools( lo_function_calling ).
+    lo_aaic_anthropic->bind_tools( lo_function_calling ).
 
     l_message = 'Hi there! What is the result of 5 + 7?'.
 
-    lo_aaic_openai->chat(
+    lo_aaic_anthropic->chat(
       EXPORTING
         i_message    = l_message
       IMPORTING
