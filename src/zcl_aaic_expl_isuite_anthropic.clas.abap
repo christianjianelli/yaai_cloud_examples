@@ -30,8 +30,6 @@ CLASS zcl_aaic_expl_isuite_anthropic IMPLEMENTATION.
     "Replace the base URL with your Integration Suite base URL
     lo_aaic_conn->set_base_url( i_base_url = 'https://63555fd1trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com' ).
 
-    lo_aaic_conn->set_api_key( i_api_key = l_api_key ).
-
     DATA(lo_aaic_anthropic) = NEW ycl_aaic_anthropic( i_model = 'claude-sonnet-4-20250514'
                                                       i_o_connection = lo_aaic_conn ).
 
