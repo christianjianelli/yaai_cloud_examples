@@ -28,12 +28,12 @@ CLASS zcl_aaic_expl_isuite_anthropic IMPLEMENTATION.
                                             i_password = l_password ).
 
     "Replace the base URL with your Integration Suite base URL
-    lo_aaic_conn->set_base_url( i_base_url = 'https://63555fd1trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com' ).
+    lo_aaic_conn->set_base_url( i_base_url = 'https://7a683cfatrial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com' ).
 
     DATA(lo_aaic_anthropic) = NEW ycl_aaic_anthropic( i_model = 'claude-sonnet-4-20250514'
                                                       i_o_connection = lo_aaic_conn ).
 
-    lo_aaic_anthropic->set_endpoint( i_endpoint = '/http/anthropic/v1/messages' ).
+    lo_aaic_anthropic->set_endpoint( i_endpoint = '/http/restapi/anthropic/v1/messages' ).
 
     l_message = 'Hi there! What is the capital of Germany?'.
 

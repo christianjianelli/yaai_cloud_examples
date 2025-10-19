@@ -28,12 +28,12 @@ CLASS zcl_aaic_expl_isuite_mistral IMPLEMENTATION.
                                             i_password = l_password ).
 
     "Replace the base URL with your Integration Suite base URL
-    lo_aaic_conn->set_base_url( i_base_url = 'https://63555fd1trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com' ).
+    lo_aaic_conn->set_base_url( i_base_url = 'https://7a683cfatrial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com' ).
 
-    DATA(lo_aaic_openai) = NEW ycl_aaic_openai( i_model = 'mistral-large-latest'
+    DATA(lo_aaic_openai) = NEW ycl_aaic_openai( i_model = 'ministral-3b-2410'
                                                 i_o_connection = lo_aaic_conn ).
 
-    lo_aaic_openai->set_endpoint( i_endpoint = '/http/mistral/v1/chat/completions' ).
+    lo_aaic_openai->set_endpoint( i_endpoint = '/http/restapi/mistral/v1/chat/completions' ).
 
     lo_aaic_openai->use_completions( ).
 
