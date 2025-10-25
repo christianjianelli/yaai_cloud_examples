@@ -1,25 +1,27 @@
-# yaaic - ABAP AI tools Cloud - Usage Examples
+# yaaic - ABAP AI Tools Cloud - Usage Examples
 
-This repository, **yaaic - ABAP AI tools Cloud - Usage Examples**, provides practical examples demonstrating the usage of the ABAP AI tools Cloud library (`yaai_cloud`). The code in this repository is entirely written in ABAP.
+This repository provides practical examples demonstrating how to use the **ABAP AI Tools Cloud** library ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud)). All code is written in ABAP.
 
-## 🔗 The Core Library: ABAP AI tools Cloud (`yaai_cloud`)
+## 🔗 Core Library: ABAP AI Tools Cloud ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud))
 
-The examples in this repository are based on the **ABAP AI tools Cloud** library (`yaai_cloud`), which provides a set of tools designed to facilitate **Artificial Intelligence capabilities within ABAP Cloud environments**.
+The examples are based on the experimental **ABAP AI Tools Cloud** library, which enables **Artificial Intelligence capabilities in ABAP Cloud environments**.
 
-The library is experimental and released under the MIT License, meaning users utilize the tools at their own risk.
+> **Note:** The library is experimental and released under the MIT License. Use at your own risk.
+>
+> **Repository:** [https://github.com/christianjianelli/yaai_cloud](https://github.com/christianjianelli/yaai_cloud)
 
-### Key Features of ABAP AI tools Cloud
+### Key Features
 
-The ABAP AI tools Cloud library offers advanced functionalities to build intelligent ABAP applications:
+The ABAP AI Tools Cloud library offers advanced features for building intelligent ABAP applications:
 
-*   **Multi-Provider LLM API Support:** It supports seamless integration with multiple large language model (LLM) APIs, providing flexibility in choosing providers and deployment models. Currently supported APIs include **OpenAI**, **Google Gemini**, and **Anthropic**. APIs from other providers, such as **Mistral** (cloud-based), that implement the OpenAI API standards, may also work, potentially requiring minor adjustments.
-*   **Conversation Management:** It allows users to maintain and manage multi-turn conversations, providing full access to conversation history for advanced chat scenarios.
-*   **Tool/Function Calling:** ABAP business logic can be integrated with LLMs using function/tool calling, enabling AI models to trigger ABAP methods.
-*   **Retrieval-Augmented Generation (RAG):** This feature enhances LLM outputs by incorporating enterprise data, leading to more accurate and relevant answers through RAG workflows.
+- **Multi-Provider LLM API Support:** Integrate with multiple large language model (LLM) APIs, including **OpenAI**, **Google Gemini**, and **Anthropic**. Other providers (e.g., **Mistral**) that implement OpenAI API standards may also work with minor adjustments.
+- **Conversation Management:** Maintain and manage multi-turn conversations, with full access to conversation history for advanced chat scenarios.
+- **Tool/Function Calling:** Integrate ABAP business logic with LLMs using function/tool calling, allowing AI models to trigger ABAP methods.
+- **Retrieval-Augmented Generation (RAG):** Enhance LLM outputs by incorporating enterprise data, enabling more accurate and relevant answers through RAG workflows.
 
-### Prerequisites for ABAP AI tools Cloud
+### Prerequisites
 
-To run the examples that utilize the `yaai_cloud` library, the following prerequisites are necessary:
+To run the examples using the `yaai_cloud` library, you need:
 
-*   **SAP ABAP Cloud:** You must have an **SAP BTP ABAP environment** or an **SAP S/4HANA Cloud ABAP environment** (also known as Embedded Steampunk).
-*   **abapGit:** The `abapGit Repositories Eclipse ADT Plug-In` must be installed.
+- **SAP ABAP Cloud:** An **SAP BTP ABAP environment** or **SAP S/4HANA Cloud ABAP environment** (Embedded Steampunk).
+- **abapGit:** The `abapGit Repositories Eclipse ADT Plug-In` must be installed.
