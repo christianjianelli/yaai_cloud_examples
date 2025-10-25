@@ -1,10 +1,10 @@
-# yaaic - ABAP AI Tools Cloud - Usage Examples
+# yaaic - ABAP AI tools Cloud - Usage Examples
 
-This repository provides practical examples demonstrating how to use the **ABAP AI Tools Cloud** library ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud)). All code is written in ABAP.
+This repository provides practical examples demonstrating how to use the **ABAP AI tools Cloud** library ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud)). All code is written in ABAP.
 
-## 🔗 Core Library: ABAP AI Tools Cloud ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud))
+## 🔗 Core Library: ABAP AI tools Cloud ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud))
 
-The examples are based on the experimental **ABAP AI Tools Cloud** library, which enables **Artificial Intelligence capabilities in ABAP Cloud environments**.
+The examples are based on the experimental **ABAP AI tools Cloud** library, which enables **Artificial Intelligence capabilities in ABAP Cloud environments**.
 
 > **Note:** The library is experimental and released under the MIT License. Use at your own risk.
 >
@@ -12,7 +12,7 @@ The examples are based on the experimental **ABAP AI Tools Cloud** library, whic
 
 ### Key Features
 
-The ABAP AI Tools Cloud library offers advanced features for building intelligent ABAP applications:
+The ABAP AI tools Cloud library offers advanced features for building intelligent ABAP applications:
 
 - **Multi-Provider LLM API Support:** Integrate with multiple large language model (LLM) APIs, including **OpenAI**, **Google Gemini**, and **Anthropic**. Other providers (e.g., **Mistral**) that implement OpenAI API standards may also work with minor adjustments.
 - **Conversation Management:** Maintain and manage multi-turn conversations, with full access to conversation history for advanced chat scenarios.
