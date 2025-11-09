@@ -42,20 +42,24 @@ CLASS zcl_aaic_example_fcprxy_openai IMPLEMENTATION.
 
     DATA(lo_function_calling) = NEW ycl_aaic_func_call_openai( ).
 
-    lo_function_calling->add_methods( VALUE #( ( class_name = 'zcl_aaic_math_tools_proxy'
+    lo_function_calling->add_methods( VALUE #( ( class_name = 'zcl_aaic_math_tools'
                                                  method_name = 'add'
+                                                 proxy_class = 'zcl_aaic_math_tools_proxy'
                                                  description = 'Use this method to add two numbers (i_num1 + i_num2)' )
 
-                                               ( class_name = 'zcl_aaic_math_tools_proxy'
+                                               ( class_name = 'zcl_aaic_math_tools'
                                                  method_name = 'subtract'
+                                                 proxy_class = 'zcl_aaic_math_tools_proxy'
                                                  description = 'Use this method to subtract two numbers (i_num1 - i_num2)' )
 
-                                               ( class_name = 'zcl_aaic_math_tools_proxy'
+                                               ( class_name = 'zcl_aaic_math_tools'
                                                  method_name = 'multiply'
+                                                 proxy_class = 'zcl_aaic_math_tools_proxy'
                                                  description = 'Use this method to multiply two numbers (i_num1 * i_num2)' )
 
-                                               ( class_name = 'zcl_aaic_math_tools_proxy'
+                                               ( class_name = 'zcl_aaic_math_tools'
                                                  method_name = 'divide'
+                                                 proxy_class = 'zcl_aaic_math_tools_proxy'
                                                  description = 'Use this method to divide two numbers (i_num1 / i_num2)' ) ) ).
 
     lo_aaic_openai->bind_tools( lo_function_calling ).
