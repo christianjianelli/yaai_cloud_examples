@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_example_openai IMPLEMENTATION.
+CLASS ZCL_AAIC_EXAMPLE_OPENAI IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -41,5 +42,4 @@ CLASS zcl_aaic_example_openai IMPLEMENTATION.
     out->write( lt_response ).
 
   ENDMETHOD.
-
 ENDCLASS.

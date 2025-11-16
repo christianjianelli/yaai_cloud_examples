@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_example_prompt_templ IMPLEMENTATION.
+CLASS ZCL_AAIC_EXAMPLE_PROMPT_TEMPL IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -47,5 +48,4 @@ CLASS zcl_aaic_example_prompt_templ IMPLEMENTATION.
     out->write( l_prompt ).
 
   ENDMETHOD.
-
 ENDCLASS.

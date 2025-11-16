@@ -35,7 +35,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_math_tools_proxy IMPLEMENTATION.
+CLASS ZCL_AAIC_MATH_TOOLS_PROXY IMPLEMENTATION.
+
 
   METHOD add.
 
@@ -62,6 +63,7 @@ CLASS zcl_aaic_math_tools_proxy IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD subtract.
 
     DATA: l_num1 TYPE f,
@@ -86,6 +88,7 @@ CLASS zcl_aaic_math_tools_proxy IMPLEMENTATION.
     ).
 
   ENDMETHOD.
+
 
   METHOD multiply.
 
@@ -112,6 +115,7 @@ CLASS zcl_aaic_math_tools_proxy IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD divide.
 
     DATA: l_num1 TYPE f,
@@ -136,5 +140,4 @@ CLASS zcl_aaic_math_tools_proxy IMPLEMENTATION.
     ).
 
   ENDMETHOD.
-
 ENDCLASS.

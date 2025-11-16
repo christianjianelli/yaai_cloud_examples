@@ -37,7 +37,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_math_tools IMPLEMENTATION.
+CLASS ZCL_AAIC_MATH_TOOLS IMPLEMENTATION.
+
 
   METHOD add.
 
@@ -45,17 +46,20 @@ CLASS zcl_aaic_math_tools IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD subtract.
 
     r_response = |The result of { i_num1 } - { i_num2 } is { i_num1 - i_num2 }|.
 
   ENDMETHOD.
 
+
   METHOD multiply.
 
     r_response = |The result of { i_num1 } * { i_num2 } is { i_num1 * i_num2 }|.
 
   ENDMETHOD.
+
 
   METHOD divide.
 
@@ -68,10 +72,10 @@ CLASS zcl_aaic_math_tools IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD if_oo_adt_classrun~main.
 
     out->write( me->add( i_num1 = 2 i_num2 = 3 ) ).
 
   ENDMETHOD.
-
 ENDCLASS.

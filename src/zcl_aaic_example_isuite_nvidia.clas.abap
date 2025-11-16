@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_example_isuite_nvidia IMPLEMENTATION.
+CLASS ZCL_AAIC_EXAMPLE_ISUITE_NVIDIA IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -49,5 +50,4 @@ CLASS zcl_aaic_example_isuite_nvidia IMPLEMENTATION.
     out->write( lt_response ).
 
   ENDMETHOD.
-
 ENDCLASS.

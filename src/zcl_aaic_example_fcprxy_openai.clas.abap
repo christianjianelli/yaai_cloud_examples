@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_example_fcprxy_openai IMPLEMENTATION.
+CLASS ZCL_AAIC_EXAMPLE_FCPRXY_OPENAI IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -76,5 +77,4 @@ CLASS zcl_aaic_example_fcprxy_openai IMPLEMENTATION.
     out->write( lt_response ).
 
   ENDMETHOD.
-
 ENDCLASS.

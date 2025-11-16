@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_aaic_expl_isuite_mistral IMPLEMENTATION.
+CLASS ZCL_AAIC_EXPL_ISUITE_MISTRAL IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -49,5 +50,4 @@ CLASS zcl_aaic_expl_isuite_mistral IMPLEMENTATION.
     out->write( lt_response ).
 
   ENDMETHOD.
-
 ENDCLASS.
