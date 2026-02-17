@@ -6,7 +6,7 @@ This repository provides practical examples demonstrating how to use the **ABAP 
 
 The examples are based on the experimental **ABAP AI tools Cloud** library, which enables **Artificial Intelligence capabilities in ABAP Cloud environments**.
 
-> **Note:** The library is experimental and released under the MIT License. Use at your own risk.
+> **Note:** The library is released under the MIT License.
 >
 > **Repository:** [https://github.com/christianjianelli/yaai_cloud](https://github.com/christianjianelli/yaai_cloud)
 
