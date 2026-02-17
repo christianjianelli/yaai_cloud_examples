@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/github/license/christianjianelli/yaai_cloud?label=License&color=success)](https://github.com/christianjianelli/yaai_cloud/blob/main/LICENSE)
+
 # yaaic - ABAP AI tools Cloud - Usage Examples
 
 This repository provides practical examples demonstrating how to use the **ABAP AI tools Cloud** library ([`yaai_cloud`](https://github.com/christianjianelli/yaai_cloud)). All code is written in ABAP.
