@@ -39,7 +39,7 @@ These examples show how to integrate with different AI providers for basic text 
 - `ZCL_AAIC_EXAMPLE_ANTHROPIC` - Basic usage with Anthropic Claude
 - `ZCL_AAIC_EXAMPLE_GOOGLE` - Basic usage with Google Gemini
 - `ZCL_AAIC_EXAMPLE_MISTRAL` - Basic usage with Mistral AI
-- `ZCL_AAIC_EXAMPLE_OPENAI` - Basic usage with OpenAI GPT models
+- `ZCL_AAIC_EXAMPLE_OPENAI` - Basic usage with OpenAI
 
 ### Function Calling Examples
 
@@ -47,7 +47,7 @@ Examples demonstrating tool/function calling capabilities, allowing AI models to
 
 - `ZCL_AAIC_EXAMPLE_FC_ANTHROPIC` - Function calling with Anthropic Claude
 - `ZCL_AAIC_EXAMPLE_FC_GOOGLE` - Function calling with Google Gemini
-- `ZCL_AAIC_EXAMPLE_FC_OPENAI` - Function calling with OpenAI GPT models
+- `ZCL_AAIC_EXAMPLE_FC_OPENAI` - Function calling with OpenAI models
 - `ZCL_AAIC_EXAMPLE_FCPRX_OPENAI` - Function calling proxy example with OpenAI
 
 ### Integration Suite Examples
@@ -65,9 +65,9 @@ Examples for SAP Integration Suite integrations:
 Additional examples showcasing specific features:
 
 - `ZCL_AAIC_EXAMPLE_OPENAI_AGENT` - OpenAI agent implementation
-- `ZCL_AAIC_EXAMPLE_PROMPT_TEMPL` - Prompt templating example
-- `ZCL_AAIC_EXAMPLE_SI_ANTHROPIC` - Structured input example with Anthropic
-- `ZCL_AAIC_EXAMPLE_SI_GOOGLE` - Structured input example with Google Gemini
-- `ZCL_AAIC_EXAMPLE_SI_OPENAI` - Structured input example with OpenAI
+- `ZCL_AAIC_EXAMPLE_PROMPT_TEMPL` - Prompt template example
+- `ZCL_AAIC_EXAMPLE_SI_ANTHROPIC` - System Instructions example with Anthropic
+- `ZCL_AAIC_EXAMPLE_SI_GOOGLE` - System Instructions example with Google Gemini
+- `ZCL_AAIC_EXAMPLE_SI_OPENAI` - System Instructions example with OpenAI
 - `ZCL_AAIC_MATH_TOOLS` - Math tools implementation
 - `ZCL_AAIC_MATH_TOOLS_PROXY` - Math tools proxy example
